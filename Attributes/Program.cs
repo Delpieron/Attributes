@@ -19,13 +19,8 @@ namespace Attributes
             //st.Stop();
             //Console.WriteLine(st.ElapsedTicks) ;
             ConditionalClass cC = new ConditionalClass();
-#if DEBUG
-
-#else
-
-#endif
-            //cC.Login();
-            //cC.Login("User","Pass");
+            cC.Login();
+            cC.Login("User","Pass");
 
             Console.Read();
 

@@ -9,13 +9,13 @@ namespace Attributes
 {
     class ConditionalClass
     {
-        //[Conditional("DEBUG")]
+        [Conditional("DEBUG")]
         public void Login()
         {
             ShowUI();
         }
 
-        //[Conditional("OTHER")]
+        [Conditional("RELASE")]
         public void Login(string user, string passwd)
         {
             Console.WriteLine("1");
